@@ -34,24 +34,6 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val searchPost= Constants.getUserList()
         setProfileUi(searchPost)
-        binding.profileRec.addOnScrollListener(object: RecyclerView.OnScrollListener() {
-            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-                super.onScrolled(recyclerView, dx, dy)
-
-                // Toolbar'ın yüksekliğini al
-                val toolbarHeight = binding.cons1.height
-                // lin2 layout'unun ekran içindeki konumunu hesapla
-                val lin2Y = binding.lin2.y - recyclerView.computeVerticalScrollOffset()
-                // lin1 layout'unun yüksekliğini al
-            //    val lin1Height = lin1.height
-                // Eğer lin2 layout, toolbar'ın altına gelmişse, lin2 layout'u sabitle
-                if (lin2Y < toolbarHeight) {
-                    binding.lin2.translationY = (toolbarHeight - lin2Y).toFloat()
-                } else {
-                   binding.lin2.translationY = 0f
-                }
-            }
-        })
     }
     private fun setProfileUi(list: List<User>) {
         profileAdapter= ProfileAdapter(list)
