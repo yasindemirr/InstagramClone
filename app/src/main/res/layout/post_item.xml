@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/postConst"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/margin_10dp"
+            >
+          <com.google.android.material.imageview.ShapeableImageView
+              android:layout_width="@dimen/post_circular_image"
+              android:layout_height="@dimen/post_circular_image"
+              android:layout_marginVertical="@dimen/margin_10dp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              android:id="@+id/post_circle_image"
+              android:scaleType="centerCrop"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              android:src="@mipmap/ic_launcher"
+              app:shapeAppearanceOverlay="@style/PostCircular">
+          </com.google.android.material.imageview.ShapeableImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/min_sans_regular"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:text="UserName"
+                android:id="@+id/kullaniciAdi"
+                android:textColor="@color/black"
+                android:textSize="@dimen/post_text_size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/post_circle_image"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dot_three"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </ImageView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/post_image_yukselik"
+            app:layout_constraintTop_toBottomOf="@id/postConst"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/postcontTwo"
+            android:scaleType="fitXY"
+            android:id="@+id/post_image">
+        </ImageView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/postcontTwo"
+            app:layout_constraintBottom_toTopOf="@id/linearComment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/margin_10dp">
+            <ImageView
+                android:layout_width="@dimen/margin_40dp"
+                android:layout_height="@dimen/margin_40dp"
+                android:src="@drawable/fav"
+                android:layout_marginVertical="@dimen/margin_10dp"
+                android:id="@+id/fav"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </ImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/message"
+                android:id="@+id/message"
+                android:layout_marginStart="@dimen/margin_25dp"
+                app:layout_constraintStart_toEndOf="@id/fav"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </ImageView>
+            <ImageView
+                android:layout_width="@dimen/margin_40dp"
+                android:layout_height="@dimen/margin_40dp"
+                android:src="@drawable/paper"
+                android:id="@+id/send"
+                android:layout_marginStart="@dimen/margin_25dp"
+                app:layout_constraintStart_toEndOf="@id/message"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </ImageView>
+            <ImageView
+                android:layout_width="@dimen/margin_40dp"
+                android:layout_height="@dimen/margin_40dp"
+                android:src="@drawable/save"
+                android:id="@+id/save"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </ImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/begeni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beğeni"
+            android:textColor="@color/black"
+            android:textSize="@dimen/post_text_size"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/kullaniciYorum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kullanıcı postu"
+            android:textSize="@dimen/post_text_size"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/zaman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 saat önce"
+            android:textSize="@dimen/post_text_size"></TextView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

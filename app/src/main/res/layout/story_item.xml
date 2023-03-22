@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_10dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="@dimen/circular_imageBigger"
+        android:layout_height="@dimen/circular_imageBigger"
+        app:shapeAppearanceOverlay="@style/Circular"
+        android:id="@+id/historyImageBigger"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/his_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        >
+    </com.google.android.material.imageview.ShapeableImageView>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="@dimen/circular_image"
+        android:layout_height="@dimen/circular_image"
+        app:shapeAppearanceOverlay="@style/Circular"
+        android:id="@+id/historyImage"
+        app:layout_constraintTop_toTopOf="@id/historyImageBigger"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/historyImageBigger"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <TextView
+        android:id="@+id/historyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/inder"
+        android:text="Name"
+        android:textSize="@dimen/HikayenTextSize"
+        app:layout_constraintEnd_toEndOf="@id/historyImageBigger"
+        app:layout_constraintStart_toStartOf="@id/historyImageBigger"
+        app:layout_constraintTop_toBottomOf="@id/historyImageBigger">
+
+    </TextView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_add_circle_24"
+        android:id="@+id/hisAdd"
+        android:visibility="gone"
+        app:tint="@color/add_blue"
+        android:background="@drawable/add_back"
+        app:layout_constraintEnd_toEndOf="@id/historyImage"
+        app:layout_constraintBottom_toBottomOf="@id/historyImage">
+
+    </ImageView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
