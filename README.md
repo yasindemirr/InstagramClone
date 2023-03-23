@@ -3,9 +3,17 @@
 I only designed the  UI.
 
 
-<img src="https://user-images.githubusercontent.com/123153282/227190612-ec5b7d22-8482-41e5-afe9-1d5b2c03146c.png" width="200" height="400">   <img src="https://user-images.githubusercontent.com/123153282/227190627-8c257642-87a7-4f39-9b45-8463fb3d81d4.png" width="200" height="400">  
-<img src="https://user-images.githubusercontent.com/123153282/227190641-1d565cdb-7fc5-47fd-bc2b-f6a7da38e577.png" width="200" height="400">   <img src="https://user-images.githubusercontent.com/123153282/227190710-9a2b2cf6-1b8c-4407-a6c4-051335d8497c.png" width="200" height="400">  
-<img src="https://user-images.githubusercontent.com/123153282/227190724-e9156733-9341-4360-9ffe-6c6a7108c608.png" width="200" height="400">  
+<img src="https://user-images.githubusercontent.com/123153282/227212510-8a5a5e32-3a6e-476d-8d5b-a04f66611c69.png" width="200" height="400">   <img src="https://user-images.githubusercontent.com/123153282/227212525-4b6eae1b-f0cd-4ff9-a99d-e2e09058ac13.png" width="200" height="400">  
+<img src="https://user-images.githubusercontent.com/123153282/227213468-f9e9d61b-cbaf-4a4e-a8bb-637d61b8708f.png" width="200" height="400">   <img src="https://user-images.githubusercontent.com/123153282/227190710-9a2b2cf6-1b8c-4407-a6c4-051335d8497c.png" width="200" height="400">  
+<img src="https://user-images.githubusercontent.com/123153282/227212522-60ad6d93-4a1e-4a6e-950c-63b2761bbb53.png" width="200" height="400">  
+
+
+
+
+
+
+
+
 
 
 
