@@ -12,7 +12,7 @@
     <dimen name="margin_5dp">5dp</dimen>
     <dimen name="margin_72dp">72dp</dimen>
     <dimen name="margin_65dp">65dp</dimen>
-    <dimen name="post_text_size">20sp</dimen>
+    <dimen name="post_text_size">18sp</dimen>
     <dimen name="margin_40dp">40dp</dimen>
     <dimen name="margin_20dp">20dp</dimen>
     <dimen name="margin_25dp">25dp</dimen>
@@ -27,13 +27,16 @@
     <dimen name="indicator_width">4dp</dimen>
     <dimen name="indicator_height">2dp</dimen>
     <dimen name="indicator_margin">2dp</dimen>
-    <dimen name="ara_size">25sp</dimen>
+    <dimen name="ara_size">20sp</dimen>
     <dimen name="margin_120dp">120dp</dimen>
     <dimen name="circular_image_porfile">80dp</dimen>
     <dimen name="profil_kullanaciAdi">25sp</dimen>
     <dimen name="profile_subs">25sp</dimen>
     <dimen name="profil_gonderi">17sp</dimen>
     <dimen name="profile_text">20sp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_3dp">3dp</dimen>
+    <dimen name="margin_7dp">7dp</dimen>
 
 
 </resources>

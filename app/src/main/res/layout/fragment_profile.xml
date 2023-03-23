@@ -76,7 +76,7 @@
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="@dimen/circular_image_porfile"
                 android:layout_height="@dimen/circular_image_porfile"
-                android:src="@drawable/guney"
+                android:src="@drawable/einstein"
                 android:scaleType="centerCrop"
                 app:shapeAppearanceOverlay="@style/Circular"
                 app:layout_constraintStart_toStartOf="parent"

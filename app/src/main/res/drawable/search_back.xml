@@ -6,7 +6,7 @@
     </solid>
 
     <corners
-        android:radius="@dimen/margin_15dp">
+        android:radius="@dimen/margin_10dp">
     </corners>
 
 </shape>
