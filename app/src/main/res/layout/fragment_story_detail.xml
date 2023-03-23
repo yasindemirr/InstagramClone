@@ -62,7 +62,7 @@
    <com.google.android.material.imageview.ShapeableImageView
        android:layout_width="@dimen/post_circular_image"
        android:layout_height="@dimen/post_circular_image"
-       android:src="@drawable/yasin"
+       android:src="@drawable/einstein"
        app:shapeAppearanceOverlay="@style/Circular"
        app:layout_constraintTop_toTopOf="parent"
        android:id="@+id/kullaniciFoto"
@@ -99,7 +99,7 @@
    <ImageView
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:src="@drawable/dot_three"
+       android:src="@drawable/dots_three_vertical"
        app:tint="@color/white"
        app:layout_constraintTop_toTopOf="@id/kullaniciFoto"
        app:layout_constraintBottom_toBottomOf="@id/kullaniciFoto"
